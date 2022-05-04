@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Clinic "Space"</title>
+	<link rel="stylesheet" href="./Styles/styles.css">
+	<link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+	<script type="text/javascript" src="https://livejs.com/live.js"></script>
+
+</head>
+
+<body>
+	<header class="header">
+		<nav class="nav-bar secondary-text"> 
+			<div class="nav-bar-wrapper">
+				<div class="nav-logo-wrapper">
+					<i class="nav-logo"></i>
+					<span class="nav-title">Clinic "Space"</span>
+				</div>
+				
+				<div class="nav-menu-wrapper">
+					<span class="nav-menu-item">Про нас</span>
+					<span class="nav-menu-item">Новини</span>
+					<span class="nav-menu-item">Блог</span>
+					<i class="nav-menu-icon"></i>
+				</div>
+
+				<div class="menu-button"></div>
+			</div>
+		</nav>
+	</header>
+	<div class="page-wrapper">
+		<section class="registration-section">
+			<div class="registration-form-wrapper">
+
+				<div class="registration-form-image-wrapper">
+					<img class="registration-form-image" id="people-img" src="./Assets/Мельник.png" alt="people-img">
+				</div>
+			
+				<div class="form-card flex-column">
+					<div class="form-wrapper">
+
+						<h2 class="form-title">Електронна черга 
+							<span id="text-to-change"> на вакцинацію</span></h2>
+
+						<form class="registration-form flex-column" action="submit">
+							<lable class="form-label" for="name">Ім'я</lable>
+							<input type="text" class="form-input" id="name" name="name" placeholder="Введіть ім'я" required>
+
+							<lable class="form-label" for="">Телефон</lable>
+							<input type="tel" class="form-input" id="phone" name="phone"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+38(_) __ __ __ ___" required>
+
+							<lable class="form-label" for="select">Виберіть лікаря:</lable>
+							<select name="select" id="select" class="form-input form-input-select" required>
+								<option value="first">Мельник Андрій Іванович</option>
+								<option value="second">Мартинюк Олександр Михайлович</option>
+								<option value="third">Ткач Денис Миколайович</option>
+								<option value="fourth">Мудра Марта Макарівна</option>
+								<option value="fifth">Пилипчук Валерій Степанович</option>
+							</select>
+							
+							<button class="form-submit-button" type="submit">Зареєструватися</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer secondary-text">
+		<span class="footer-credentials">
+			Ⓒ2020 Clinic "Space". Всі права захищені.
+		</span>
+	</footer>
+
+<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
